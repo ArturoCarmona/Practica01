@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--CSS Bootstramp-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS local-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+<!--Calculadora-->
+    <!-- Header -->
+    <nav class="container py-5">
+        <h1 class="text-center">Calculadora</h1>
+    </nav>
+
+    <div class="container-sm text-center py-" id="calculadora"></div>
+
+        <div class="row justify-content-center my-3">
+            <div class="col-sm-4 col-xs-12 text-center my-2">
+                <!--<label for="numA">Primer número</label>-->
+                <input class="border border-dark" type="number" id="numA" placeholder="Escribe número.." required>
+            </div>
+            <div class="col-sm-4 col-xs-12 text-center my-2">
+                <!--<label for="numB">Segundo número</label>-->
+                <input class="border border-dark" type="number" id="numB" placeholder="Escribe número.." required>
+            </div>
+        </div>
+
+        <!--Ventana de resultado-->
+        <div class="row justify-content-center my-3">
+            <div class="alert alert-primary col-3 text-center" id="respuesta" role="alert">
+              </div>
+        </div>
+        
+        <!-- Limpiar valores -->
+        <div class="row justify-content-center my-3">
+            <div class="col-1">
+                <button onclick="limpiar();" class="btn btn-secondary btn-sm">Limpiar</button>
+            </div>
+        </div>
+        <!-- Botones de operaciones -->
+        <div class="row justify-content-center">
+            <div class="col-sm-3 col-xs-12 text-center my-3">
+                <button class="btn btn-danger btn-lg" id="suma">Suma</button>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-center my-3">
+                <button class="btn btn-warning btn-lg" id="resta">Resta</button>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-center my-3">
+                <button class="btn btn-info btn-lg" id="multiplicacion">Multiplicación</button>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-center my-3">
+                <button class="btn btn-success btn-lg" id="division">División</button>
+            </div>
+        </div>
+    </div>
+    <!--JS Bootstramp-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
