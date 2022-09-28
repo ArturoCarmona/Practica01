@@ -1,8 +1,3 @@
-//++++++++++++ Boton limpiar +++++++++++
-function limpiar(){
-    document.getElementById("calculadora").reset();
-}
-
 //++++++++++++ Operacion suma +++++++++++
 
 // Se obtienen la respuesta del boton Suma
